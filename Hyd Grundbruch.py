@@ -7,7 +7,7 @@
 
 # **<span style="color:black;font-family:Tahoma;"> Gewichtskraft (G) </span>**
 
-# In[10]:
+# In[8]:
 
 
 γ=12      #γ'
@@ -21,7 +21,7 @@ print("Gewichtskraft G =", G)
 # 
 # 
 
-# In[11]:
+# In[9]:
 
 
 ΔH=10
@@ -38,7 +38,7 @@ print("Strömungskraft S =", S)
 # <span style="color:blue;font-family:Tahoma;"> Teilsicherheitsbeiwert (stabilisierende 
 #  (γH), Teilsicherheitsbeiwert  (destabilisierende (γG,dst) </span>
 
-# In[18]:
+# In[10]:
 
 
 γGst = 0.95
@@ -47,11 +47,11 @@ print("Strömungskraft S =", S)
 
 # **<span style="color:black;font-family:Tahoma;">  Stabiliesierende Gewichtskraft (G,stbK), und destabilisierende Strömungskraft(S,dstK) </span>**
 
-# In[19]:
+# In[12]:
 
 
 Gst=G* γGst
-print("Stabiliesierende Gewichtskraft Gst,K =", Gst)
+print("Stabiliesierende Gewichtskraft Gstb,K =", Gst)
 print()
 Sdst=S*γH
 print("Distabiliesierende Strömungskraft Sdst,K =", Sdst)
@@ -59,17 +59,23 @@ print("Distabiliesierende Strömungskraft Sdst,K =", Sdst)
 
 
 
-# ### <span style="color:blue;font-family:Tahoma;"> Nachweis der Sicherheit gegen Aufschwimmen nach EC7 </span>
-# ### <span style="color:red;font-family:Tahoma;"> G<sub>dst,k</sub> · γ<sub>G,dst</sub> ≤ G<sub>stb,k</sub> · γ<sub>G,stb</sub> </span>
+# ### <span style="color:red;font-family:Tahoma;">Nachweis der Sicherheit gegen Hydraulischen Grundbruch GZ HYD  EC 7 </span>
+# ### <span style="color:blue;font-family:Tahoma;"> S<sub>dst,k</sub> · γ<sub>H</sub> ≤ G<sub>stb,k</sub> ·  γ<sub>G,stb</sub></span>
 # 
 
-# In[20]:
+# In[13]:
 
 
-if G >= Sdst :
+if Gst >= Sdst :
     print("Nachweis erbracht!")
 else:
         print("Nachweis nicht erfüllt!!!!!")
         
         
+
+
+# In[ ]:
+
+
+
 
