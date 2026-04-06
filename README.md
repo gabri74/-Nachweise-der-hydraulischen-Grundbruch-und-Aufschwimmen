@@ -1,6 +1,6 @@
 <h3>
   <span style="color:red; font-family:Tahoma;">
-    Nachweis der Sicherheit gegen hydraulisches Versagen HYD (Hydraulic Failure – Limit State) EC7
+    Nachweis der Sicherheit gegen hydraulisches Versagen GZ HYD (Ultimate Limit State – Hydraulic Failure) EC7
   </span>
 </h3>
 
